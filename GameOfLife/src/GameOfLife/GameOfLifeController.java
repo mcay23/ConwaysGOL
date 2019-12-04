@@ -21,7 +21,7 @@ public class GameOfLifeController implements Observer {
     private SettingsFrame settings_view;
     private boolean animationStarted;
 
-    GameOfLifeController(GameOfLifeModel model) {
+    public GameOfLifeController(GameOfLifeModel model) {
         history = new ArrayList<boolean[][]>();
         this.model = model;
         promptSettings();
